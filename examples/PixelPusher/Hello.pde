@@ -1,12 +1,12 @@
-import template.library.*;
+import com.heroicrobot.dropbit.processing.*;
 
-HelloLibrary hello;
+PixelPusherLibrary ppl;
 
 void setup() {
   size(400,400);
   smooth();
   
-  hello = new HelloLibrary(this);
+  ppl = new PixelPusherLibrary(this);
   
   PFont font = createFont("",40);
   textFont(font);
@@ -15,5 +15,5 @@ void setup() {
 void draw() {
   background(0);
   fill(255);
-  text(hello.sayHello(), 40, 200);
+  text(ppl.sayHello(), 40, 200);
 }
